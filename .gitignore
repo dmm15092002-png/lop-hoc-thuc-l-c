@@ -1,0 +1,16 @@
+# LaTeX build
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# Node / Next.js (sau này)
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+# Hệ điều hành
+.DS_Store
+Thumbs.db

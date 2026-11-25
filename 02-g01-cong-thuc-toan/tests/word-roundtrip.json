@@ -1,0 +1,177 @@
+[
+ {
+  "id": "T01",
+  "name": "Phân số lồng nhau",
+  "src": "\\dfrac{1}{1+\\dfrac{1}{1+\\dfrac{1}{x}}}",
+  "back": "\\frac{1}{1 + \\frac{1}{1 + \\frac{1}{x}}}",
+  "same": false
+ },
+ {
+  "id": "T02",
+  "name": "Căn bậc n lồng nhau",
+  "src": "\\sqrt[3]{x+\\sqrt{x^2+1}}+\\sqrt[3]{x-\\sqrt{x^2+1}}",
+  "back": "\\sqrt[3]{x + \\sqrt{x^{2} + 1}} + \\sqrt[3]{x - \\sqrt{x^{2} + 1}}",
+  "same": false
+ },
+ {
+  "id": "T03",
+  "name": "Hệ phương trình (cases)",
+  "src": "\\begin{cases} x+y=3\\\\ 2x-y=0 \\end{cases}",
+  "back": "\\left\\{ \\begin{matrix}\nx + y = 3 \\\\\n2x - y = 0\n\\end{matrix} \\right.\\",
+  "same": false
+ },
+ {
+  "id": "T04",
+  "name": "Tuyển 'hoặc' bằng ngoặc vuông",
+  "src": "\\left[\\begin{array}{l} x=1\\\\ x=-\\dfrac{2}{3} \\end{array}\\right.",
+  "back": "\\left\\lbrack \\begin{matrix}\nx = 1 \\\\\nx = - \\frac{2}{3}\n\\end{matrix} \\right.\\",
+  "same": false
+ },
+ {
+  "id": "T10",
+  "name": "Khoảng, nửa khoảng kiểu Việt Nam",
+  "src": "x\\in[1;3)\\cup(5;+\\infty)",
+  "back": "x \\in \\lbrack 1;3) \\cup (5; + \\infty)",
+  "same": false
+ },
+ {
+  "id": "T12",
+  "name": "Giá trị tuyệt đối co giãn",
+  "src": "\\left|\\dfrac{x-1}{x+2}\\right|+|x|\\geqslant 0",
+  "back": "\\left| \\frac{x - 1}{x + 2} \\right| + |x| \\geq 0",
+  "same": false
+ },
+ {
+  "id": "T13",
+  "name": "Logarit cơ số căn",
+  "src": "\\log_{\\sqrt{2}}(x^2-1)=\\log_2 3+\\ln e^{2x}",
+  "back": "\\log_{\\sqrt{2}}\\left( x^{2} - 1 \\right) = \\log_{2}3 + \\ln e^{2x}",
+  "same": false
+ },
+ {
+  "id": "T14",
+  "name": "Phương trình mũ lồng",
+  "src": "2^{x^2-3x}=\\left(\\dfrac{1}{2}\\right)^{x-1},\\quad e^{\\frac{x}{2}}",
+  "back": "2^{x^{2} - 3x} = \\left( \\frac{1}{2} \\right)^{x - 1},\\quad e^{\\frac{x}{2}}",
+  "same": false
+ },
+ {
+  "id": "T15",
+  "name": "Giới hạn vô cực",
+  "src": "\\lim\\limits_{x\\to+\\infty}\\dfrac{2x+1}{x-3}=2",
+  "back": "\\lim_{x \\rightarrow + \\infty}\\frac{2x + 1}{x - 3} = 2",
+  "same": false
+ },
+ {
+  "id": "T16",
+  "name": "Đạo hàm, đạo hàm cấp n",
+  "src": "f'(x),\\ y'',\\ f^{(n)}(x),\\ \\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}",
+  "back": "f\\prime(x),\\ y'',\\ f^{(n)}(x),\\ \\left( \\frac{u}{v} \\right)\\prime = \\frac{u\\prime v - uv\\prime}{v^{2}}",
+  "same": false
+ },
+ {
+  "id": "T17",
+  "name": "Tích phân xác định",
+  "src": "\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\sin x\\,\\mathrm{d}x=1",
+  "back": "\\int_{0}^{\\frac{\\pi}{2}}\\sin x\\, dx = 1",
+  "same": false
+ },
+ {
+  "id": "T19",
+  "name": "Tổng và tổ hợp kiểu Việt Nam",
+  "src": "\\sum_{k=0}^{n}\\mathrm{C}_n^k2^k=3^n",
+  "back": "\\sum_{k = 0}^{n}C_{n}^{k}2^{k} = 3^{n}",
+  "same": false
+ },
+ {
+  "id": "T20",
+  "name": "Chỉnh hợp, hoán vị, nhị thức",
+  "src": "\\mathrm{A}_{10}^{3}=720,\\ P_5=5!,\\ \\binom{n}{k}",
+  "back": "A_{10}^{3} = 720,\\ P_{5} = 5!,\\ \\binom{n}{k}",
+  "same": false
+ },
+ {
+  "id": "T21",
+  "name": "Vectơ",
+  "src": "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC},\\ \\vec{u}\\cdot\\vec{v}=0",
+  "back": "\\overrightarrow{AB} + \\overrightarrow{BC} = \\overrightarrow{AC},\\ \\overrightarrow{u} \\cdot \\overrightarrow{v} = 0",
+  "same": false
+ },
+ {
+  "id": "T22",
+  "name": "Góc và độ",
+  "src": "\\widehat{ABC}=60^\\circ,\\ \\angle xOy",
+  "back": "\\widehat{ABC} = 60^{\\circ},\\ \\angle xOy",
+  "same": false
+ },
+ {
+  "id": "T23",
+  "name": "Cung tròn",
+  "src": "\\overset{\\frown}{AB}=\\overset{\\frown}{CD}",
+  "back": "\\overset{\\frown}{AB} = \\overset{\\frown}{CD}",
+  "same": true
+ },
+ {
+  "id": "T24",
+  "name": "Song song, vuông góc, đồng dạng",
+  "src": "d\\parallel(P),\\ SA\\perp(ABCD),\\ \\triangle ABC\\backsim\\triangle DEF",
+  "back": "d \\parallel (P),\\ SA\\bot(ABCD),\\  \\bigtriangleup ABC \\backsim \\bigtriangleup DEF",
+  "same": false
+ },
+ {
+  "id": "T26",
+  "name": "Số phức liên hợp, mô-đun",
+  "src": "z=3-4i,\\ \\overline{z}=3+4i,\\ |z|=\\sqrt{3^2+4^2}=5",
+  "back": "z = 3 - 4i,\\ \\overline{z} = 3 + 4i,\\ |z| = \\sqrt{3^{2} + 4^{2}} = 5",
+  "same": false
+ },
+ {
+  "id": "T27",
+  "name": "Định thức",
+  "src": "\\begin{vmatrix} a & b\\\\ c & d\\end{vmatrix}=ad-bc",
+  "back": "\\begin{vmatrix}\na & b \\\\\nc & d\n\\end{vmatrix} = ad - bc",
+  "same": true
+ },
+ {
+  "id": "T28",
+  "name": "Biến đổi tương đương (aligned)",
+  "src": "\\begin{aligned} x^2-5x+6=0 &\\Leftrightarrow (x-2)(x-3)=0\\\\ &\\Leftrightarrow x=2 \\text{ hoặc } x=3 \\end{aligned}",
+  "back": "\\begin{matrix}\nx^{2} - 5x + 6 = 0 & \\Leftrightarrow (x - 2)(x - 3) = 0 \\\\\n & \\Leftrightarrow x = 2\\text{ hoặc }x = 3\n\\end{matrix}",
+  "same": false
+ },
+ {
+  "id": "T33",
+  "name": "Số có gạch trên (cấu tạo số)",
+  "src": "\\overline{abc}=100a+10b+c",
+  "back": "\\overline{abc} = 100a + 10b + c",
+  "same": true
+ },
+ {
+  "id": "T34",
+  "name": "Bảng xét dấu bằng array",
+  "src": "\\begin{array}{c|ccccc} x & -\\infty & & 1 & & +\\infty\\\\ \\hline f'(x) & & - & 0 & + & \\end{array}",
+  "back": "\\begin{matrix}\nx & - \\infty & & 1 & & + \\infty \\\\\nf\\prime(x) & & - & 0 & + & \n\\end{matrix}",
+  "same": false
+ },
+ {
+  "id": "T48",
+  "name": "Hàm cho bởi nhiều công thức",
+  "src": "f(x)=\\begin{cases} \\dfrac{x^2-1}{x-1} & \\text{khi } x\\neq 1\\\\ 2 & \\text{khi } x=1\\end{cases}",
+  "back": "f(x) = \\left\\{ \\begin{matrix}\n\\frac{x^{2} - 1}{x - 1} & \\text{khi }x \\neq 1 \\\\\n2 & \\text{khi }x = 1\n\\end{matrix} \\right.\\",
+  "same": false
+ },
+ {
+  "id": "T49",
+  "name": "Trung bình, xác suất có điều kiện",
+  "src": "\\bar{x}=\\dfrac{1}{n}\\sum_{i=1}^{n}x_i,\\ P(A\\mid B)=\\dfrac{P(AB)}{P(B)},\\ P(\\overline{A})",
+  "back": "\\bar{x} = \\frac{1}{n}\\sum_{i = 1}^{n}x_{i},\\ P(A \\mid B) = \\frac{P(AB)}{P(B)},\\ P\\left( \\overline{A} \\right)",
+  "same": false
+ },
+ {
+  "id": "T51",
+  "name": "Làm tròn, dấu ±, bất đẳng thức nghiêng",
+  "src": "\\lfloor x\\rfloor\\leqslant x<\\lceil x\\rceil,\\ x=\\pm\\sqrt{2},\\ a\\geqslant b",
+  "back": "\\lfloor x\\rfloor \\leq x < \\lceil x\\rceil,\\ x = \\pm \\sqrt{2},\\ a \\geq b",
+  "same": false
+ }
+]

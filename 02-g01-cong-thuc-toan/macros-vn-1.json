@@ -1,0 +1,5 @@
+{
+  "\\heva": "\\left\\{\\begin{aligned}#1\\end{aligned}\\right.",
+  "\\hoac": "\\left[\\begin{aligned}#1\\end{aligned}\\right.",
+  "\\cotg": "\\operatorname{cotg}"
+}

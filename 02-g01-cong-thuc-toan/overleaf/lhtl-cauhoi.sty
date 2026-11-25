@@ -1,0 +1,43 @@
+% lhtl-cauhoi.sty — Mẫu soạn câu hỏi chuẩn của Lớp Học Thực Lực (bản G0.1)
+% Mục đích: (1) biên dịch được trên Overleaf để giáo viên xem bản in,
+%           (2) có cấu trúc rõ ràng để bộ nhập tự đọc thành JSON.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lhtl-cauhoi}[2026/11/25 v0.1]
+\RequirePackage{amsmath,amssymb,xcolor,keyval,tikz,tkz-tab}
+\RequirePackage{enumitem}
+% ---- Macro dùng chung (PHẢI trùng với bộ macro KaTeX trên website) ----
+\newcommand{\heva}[1]{\left\{\begin{aligned}#1\end{aligned}\right.}
+\newcommand{\hoac}[1]{\left[\begin{aligned}#1\end{aligned}\right.}
+\providecommand{\tg}{\operatorname{tg}}
+\providecommand{\cotg}{\operatorname{cotg}}
+% ---- Thuộc tính câu hỏi ----
+\define@key{cauhoi}{id}{\def\ch@id{#1}}
+\define@key{cauhoi}{loai}{\def\ch@loai{#1}}
+\define@key{cauhoi}{lop}{\def\ch@lop{#1}}
+\define@key{cauhoi}{chuong}{\def\ch@chuong{#1}}
+\define@key{cauhoi}{chuyende}{\def\ch@cd{#1}}
+\define@key{cauhoi}{mucdo}{\def\ch@md{#1}}
+\define@key{cauhoi}{nguon}{\def\ch@nguon{#1}}
+\newcounter{cauhoi}
+\newenvironment{cauhoi}[1][]{%
+  \setkeys{cauhoi}{#1}\refstepcounter{cauhoi}\par\medskip
+  \noindent\textbf{Câu \thecauhoi.} {\footnotesize\color{gray}[\ch@id\ $\cdot$ \expandafter\detokenize\expandafter{\ch@loai}\ $\cdot$ lớp \ch@lop\ $\cdot$ mức \ch@md]}\ }{\par}
+% Trắc nghiệm: \pa{...} phương án sai, \pa*{...} phương án đúng
+\newcounter{pa}
+\newcommand{\phuongan}{\par\setcounter{pa}{0}}
+\makeatletter
+\newcommand{\pa}{\@ifstar{\pa@{\color{red}}}{\pa@{}}}
+\newcommand{\pa@}[2]{\stepcounter{pa}\par\hspace*{1em}{#1\textbf{\Alph{pa}.}} #2}
+% Đúng/Sai: \ydung{...} hoặc \ysai{...}
+\newcounter{y}
+\newcommand{\cacy}{\par\setcounter{y}{0}}
+\newcommand{\ydung}[1]{\stepcounter{y}\par\hspace*{1em}\textbf{\alph{y})} #1 {\color{red}\footnotesize[Đ]}}
+\newcommand{\ysai}[1]{\stepcounter{y}\par\hspace*{1em}\textbf{\alph{y})} #1 {\color{red}\footnotesize[S]}}
+% Trả lời ngắn: \dapso{đáp án chính}{các dạng tương đương, cách nhau dấu |}
+\newcommand{\dapso}[2]{\par\hspace*{1em}{\color{red}Đáp số: #1}\ifx&#2&\else\ {\footnotesize\color{gray}(chấp nhận: #2)}\fi}
+% Tự luận: \thangdiem{ý}{điểm}{hướng dẫn chấm}
+\newcommand{\thangdiem}[3]{\par\hspace*{1em}{\color{red}\footnotesize[#1 — #2 điểm]} #3}
+\newcommand{\loigiai}{\par\smallskip\noindent\textit{Lời giải.} }
+\newenvironment{hinh}{\par\begin{center}}{\end{center}\par}
+\makeatother
+\endinput

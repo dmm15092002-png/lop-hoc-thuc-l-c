@@ -1,0 +1,38 @@
+{
+  "schema": "lhtl.question/1",
+  "subject": "math",
+  "id": "T12-C4-003",
+  "type": "short_answer",
+  "grade": 12,
+  "chapter": "nguyen-ham-tich-phan",
+  "topics": [
+    "tich-phan"
+  ],
+  "difficulty": 2,
+  "stem": "Tính $I=\\displaystyle\\int_0^1 (2x-1)\\,\\mathrm{d}x-\\dfrac{1}{2}$.",
+  "answer": {
+    "accepted": [
+      "-0,5",
+      "-1/2"
+    ],
+    "match": {
+      "decimal_comma": true,
+      "strip_spaces": true,
+      "numeric_tolerance": 0
+    }
+  },
+  "solution": "$\\displaystyle\\int_0^1(2x-1)\\,\\mathrm{d}x=\\left.(x^2-x)\\right|_0^1=0$, nên $I=-\\dfrac12=-0{,}5$.",
+  "assets": [],
+  "source": {
+    "kind": "word_mathtype",
+    "file": "de-on-tap-12.docx",
+    "paragraph": 48
+  },
+  "render": {
+    "engine": "katex",
+    "macros": "vn-1"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

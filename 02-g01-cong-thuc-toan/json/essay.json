@@ -1,0 +1,44 @@
+{
+  "schema": "lhtl.question/1",
+  "subject": "math",
+  "id": "T10-C3-004",
+  "type": "essay",
+  "grade": 10,
+  "chapter": "ham-so-bac-hai",
+  "topics": [
+    "do-thi"
+  ],
+  "difficulty": 3,
+  "stem": "Cho hàm số $y=x^2-2x-3$.\n\na) Lập bảng biến thiên của hàm số.\n\nb) Tìm $m$ để phương trình $x^2-2x-3=m$ có hai nghiệm phân biệt.",
+  "answer": null,
+  "rubric": [
+    {
+      "part": "a",
+      "points": 0.5,
+      "guide": "Tính đúng đỉnh $I(1;-4)$ (0,25); bảng biến thiên đúng (0,25)."
+    },
+    {
+      "part": "b",
+      "points": 0.5,
+      "guide": "Lập luận qua đồ thị hoặc bảng biến thiên (0,25); kết luận $m>-4$ (0,25)."
+    }
+  ],
+  "submission": {
+    "kind": "image_or_pdf",
+    "max_pages": 4
+  },
+  "solution": "a) Đỉnh $I(1;-4)$; hàm số nghịch biến trên $(-\\infty;1)$, đồng biến trên $(1;+\\infty)$.\n\nb) $m>-4$.",
+  "assets": [],
+  "source": {
+    "kind": "overleaf",
+    "file": "lop10-chuong3.tex",
+    "line": 5
+  },
+  "render": {
+    "engine": "katex",
+    "macros": "vn-1"
+  },
+  "review": {
+    "status": "draft"
+  }
+}

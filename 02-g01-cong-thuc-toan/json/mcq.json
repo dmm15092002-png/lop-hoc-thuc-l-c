@@ -1,0 +1,58 @@
+{
+  "schema": "lhtl.question/1",
+  "subject": "math",
+  "id": "T12-C1-001",
+  "type": "mcq",
+  "grade": 12,
+  "chapter": "ung-dung-dao-ham",
+  "topics": [
+    "don-dieu"
+  ],
+  "difficulty": 2,
+  "stem": "Hàm số $y=x^3-3x+2$ nghịch biến trên khoảng nào dưới đây?",
+  "options": [
+    {
+      "key": "A",
+      "text": "$(-\\infty;-1)$"
+    },
+    {
+      "key": "B",
+      "text": "$(-1;1)$"
+    },
+    {
+      "key": "C",
+      "text": "$(1;+\\infty)$"
+    },
+    {
+      "key": "D",
+      "text": "$(-\\infty;+\\infty)$"
+    }
+  ],
+  "answer": {
+    "correct": "B"
+  },
+  "solution": "Ta có $y'=3x^2-3$, $y'<0 \\Leftrightarrow -1<x<1$.\n\n![Bảng biến thiên của y = x^3 - 3x + 2](asset:bbt-1)",
+  "assets": [
+    {
+      "id": "bbt-1",
+      "kind": "variation_table",
+      "source_format": "tikz",
+      "source": "\\begin{tikzpicture}\n\\tkzTabInit[lgt=1.5,espcl=2.5]{$x$/0.8,$y'$/0.8,$y$/2}{$-\\infty$,$-1$,$1$,$+\\infty$}\n\\tkzTabLine{,+,0,-,0,+,}\n\\tkzTabVar{-/$-\\infty$,+/$4$,-/$0$,+/$+\\infty$}\n\\end{tikzpicture}",
+      "svg_key": "q/T12-C1-001/bbt-1.svg",
+      "alt": "Bảng biến thiên: y tăng trên (-∞;-1), giảm trên (-1;1), tăng trên (1;+∞); cực đại 4 tại x=-1, cực tiểu 0 tại x=1",
+      "width_em": 26
+    }
+  ],
+  "source": {
+    "kind": "overleaf",
+    "file": "chuong1.tex",
+    "line": 12
+  },
+  "render": {
+    "engine": "katex",
+    "macros": "vn-1"
+  },
+  "review": {
+    "status": "draft"
+  }
+}
